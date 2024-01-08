@@ -1,0 +1,37 @@
+
+
+.service-section{
+    padding: 198px 0 140px;
+    background-color: #012F34;
+}
+.service{
+    @include display($space:space-between)
+}
+.service__title-wrapper{
+    position: relative;
+    width: 445px;
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -54px;
+        width: 50px;
+        height: 4px;
+        background-color: $pinkColor;
+    }
+}
+.service__title{
+    @include textstyle($fontSize:48px, $lineHeight:48px, $weight:700)
+}
+.service__list{
+    @include diplay($direction:column)
+}
+.service__item{
+    @include diplay();
+}
+
+
+
+
+
