@@ -1,30 +1,41 @@
 
 
 .companie-section{
-    background-color: #004047;
+    background-color: red;
+    
 }
 .companie{
     padding: 140px 0 151px;
+
+
 }
 .compaine__folder{
-    width: 932px;
+    width: 100%;
+    max-width: 932px;
     margin: 0 auto; 
     text-align: center;
 }
 .companie__title{
-    margin-bottom: 60px;
     @include textstyle($fontSize:48px,$lineHeight:48px, $weight:700);
 }
 .companie__list{
     @include display();
     text-align: center;
-    position: relative;
 }
 .companie__item{
-    width: 350px;
+    padding-top: 92px;
+    background-image: url("../../images/home/companie/vergul.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+    background-position-y: 56px;
+    background-position-x: center;
+
+    max-width: 350px;
+}
+.companie__item+.companie__item{
+    margin-left: 30px;
 }
 .companie__text{
-    position: relative;
     margin-bottom: 24px;
     text-align: center;
     @include textstyle($fontSize:15px, $lineHeight:25px);
@@ -41,12 +52,28 @@
     text-align: center;
 }
 
-.companie__img{
-    position: absolute;
-    top: -36px;
-    left: 142px;
-}
 
 
 
 
+
+@media (max-width:800px){
+    .compaine__folder{
+        width: 100%;
+        max-width: 573px;
+        margin: 0 auto; 
+        text-align: center;
+    }
+    .companie__list{
+        @include display($direction"column");
+        text-align: center;
+        background-color: green;
+    }
+    .companie__item{
+        max-width: 573px;
+        width: 100%;
+    }
+    .companie__item-title{
+        color: green;
+    }
+    }

@@ -720,6 +720,14 @@ template {
 }
 .companie-section {
   background-color: #004047;
+  background-image: url("../../images/home/companie/bottom icon.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 200px 100px;
+  background-image: url("../../images/home/companie/right img.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 147px 100px;
 }
 
 .companie {
@@ -727,13 +735,13 @@ template {
 }
 
 .compaine__folder {
-  width: 932px;
+  width: 100%;
+  max-width: 932px;
   margin: 0 auto;
   text-align: center;
 }
 
 .companie__title {
-  margin-bottom: 60px;
   color: #fff;
   font-size: 48px;
   font-style: normal;
@@ -747,15 +755,23 @@ template {
   justify-content: start;
   flex-direction: row;
   text-align: center;
-  position: relative;
 }
 
 .companie__item {
+  padding-top: 92px;
+  background-image: url("../../images/home/companie/vergul.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position-y: 56px;
+  background-position-x: center;
   width: 350px;
 }
 
+.companie__item + .companie__item {
+  margin-left: 30px;
+}
+
 .companie__text {
-  position: relative;
   margin-bottom: 24px;
   text-align: center;
   color: #fff;
@@ -786,8 +802,14 @@ template {
   text-align: center;
 }
 
-.companie__img {
-  position: absolute;
-  top: -36px;
-  left: 142px;
+@media (max-width: 800px) {
+  .compaine__folder {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .companie__list {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
