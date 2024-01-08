@@ -1,0 +1,32 @@
+
+
+.companie-section{
+    background-color: #004047;
+}
+.compaine__folder{
+    width: 932px;
+    margin: 0 auto; 
+    text-align: center;
+}
+.companie__title{
+    @include textstyle($fontSize:48px,$lineHeight:48px, $weight:700);
+}
+.companie__item{
+    width: 350px;
+}
+.companie__text{
+    @include textstyle($fontSize:15px, $lineHeight:25px);
+}
+.companie__item-title{
+    @include textstyle($fontSize:18px, $lineHeight:28px, $weight:700, $textColor:#79C8C7);
+}
+.companie__italic{
+    @include textstyle($fontSize:13px, $lineHeight:18px, $weight:500);
+    transform: rotate(90deg);
+
+}
+
+
+
+
+

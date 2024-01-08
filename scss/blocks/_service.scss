@@ -3,9 +3,14 @@
 .service-section{
     padding: 198px 0 140px;
     background-color: #012F34;
+
+    background-image: url("../../images/home/service/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100px 244px;
+    background-position: bottom right;
 }
 .service{
-    @include display($space:space-between)
+    @include display($space:space-between, $items:start)
 }
 .service__title-wrapper{
     position: relative;
@@ -25,13 +30,60 @@
     @include textstyle($fontSize:48px, $lineHeight:48px, $weight:700)
 }
 .service__list{
-    @include diplay($direction:column)
+    @include display($direction:column)
 }
 .service__item{
-    @include diplay();
+    @include display ();
+    &+&{
+        margin-top: 32px;
+    }
+}
+.service__item-content{
+    width: 445px;
+    margin-left: 23px;
+}
+.inner-wrap__title{
+    @include textstyle($weight:700, $textColor:$pinkColor);
+    margin-bottom: 16px;
+}
+.inner-wrap__text{
+    @include textstyle ($fontSize:15px, $lineHeight:25px, $weight:600)
 }
 
 
+@media (max-width:995px){
+    .service-section{
+        padding: 136px 100px 0 98px;
+        background-position: top right;
+    }
+    .service{
+        @include display($direction:column, $items:start)
+    }
+    .service__title-wrapper{
+        width: 100%;
+        margin-bottom: 64px;
+    }
+    .service__item-content{
+        width: 100%;
+    }
+    .service__title{
+        @include textstyle($fontSize:32px, $lineHeight:32px, $weight:700)
+    }
+}
 
 
-
+@media (max-width:590px){
+    .service-section{
+        padding: 100px 24px 64px 2px;
+        background-position: top right;
+    }
+    // .service__list{
+    //     @include display($direction:column, $space:center);
+    // }
+    .service__item{
+        @include display ($direction:column, $space:center);
+    }
+    .inner-wrap{
+        text-align: center;
+    }
+}
