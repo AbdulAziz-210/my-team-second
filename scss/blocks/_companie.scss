@@ -3,29 +3,49 @@
 .companie-section{
     background-color: #004047;
 }
+.companie{
+    padding: 140px 0 151px;
+}
 .compaine__folder{
     width: 932px;
     margin: 0 auto; 
     text-align: center;
 }
 .companie__title{
+    margin-bottom: 60px;
     @include textstyle($fontSize:48px,$lineHeight:48px, $weight:700);
+}
+.companie__list{
+    @include display();
+    text-align: center;
+    position: relative;
 }
 .companie__item{
     width: 350px;
 }
 .companie__text{
+    position: relative;
+    margin-bottom: 24px;
+    text-align: center;
     @include textstyle($fontSize:15px, $lineHeight:25px);
 }
 .companie__item-title{
     @include textstyle($fontSize:18px, $lineHeight:28px, $weight:700, $textColor:#79C8C7);
+    text-align: center;
 }
 .companie__italic{
+    margin-bottom: 32px;
+    display: block;
     @include textstyle($fontSize:13px, $lineHeight:18px, $weight:500);
-    transform: rotate(90deg);
-
+    font-style: italic;
+    text-align: center;
 }
 
+.companie__img{
+    position: absolute;
+    top: -36px;
+    left: 142px;
+}
 
 
 

@@ -722,6 +722,10 @@ template {
   background-color: #004047;
 }
 
+.companie {
+  padding: 140px 0 151px;
+}
+
 .compaine__folder {
   width: 932px;
   margin: 0 auto;
@@ -729,6 +733,7 @@ template {
 }
 
 .companie__title {
+  margin-bottom: 60px;
   color: #fff;
   font-size: 48px;
   font-style: normal;
@@ -736,11 +741,23 @@ template {
   line-height: 48px;
 }
 
+.companie__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+}
+
 .companie__item {
   width: 350px;
 }
 
 .companie__text {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -754,13 +771,23 @@ template {
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
+  text-align: center;
 }
 
 .companie__italic {
+  margin-bottom: 32px;
+  display: block;
   color: #fff;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
-  transform: rotate(90deg);
+  font-style: italic;
+  text-align: center;
+}
+
+.companie__img {
+  position: absolute;
+  top: -36px;
+  left: 142px;
 }/*# sourceMappingURL=main.css.map */
